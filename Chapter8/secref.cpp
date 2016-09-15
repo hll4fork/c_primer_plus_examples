@@ -4,7 +4,7 @@ int main()
 {
     using namespace std;
     int rats = 101;
-    int & rodents = rats;   // rodents is a reference
+    int & rodents = rats;   // rodents is a reference, reference must be int when it declares
 
     cout << "rats = " << rats;
     cout << ", rodents = " << rodents << endl;

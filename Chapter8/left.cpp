@@ -1,7 +1,7 @@
 // left.cpp -- string function with a default argument
 #include <iostream>
 const int ArSize = 80;
-char * left(const char * str, int n = 1);
+char * left(const char * str, int n = 1);       // default argments specific in protype
 int main()
 {
     using namespace std;

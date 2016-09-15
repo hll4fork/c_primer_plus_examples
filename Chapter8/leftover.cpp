@@ -1,6 +1,6 @@
 // leftover.cpp -- overloading the left() function
 #include <iostream>
-unsigned long left(unsigned long num, unsigned ct);
+unsigned long left(unsigned long num, unsigned ct); // different sigurature, --> differnet argment list
 char * left(const char * str, int n = 1);
 
 int main()

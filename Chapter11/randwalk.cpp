@@ -4,6 +4,7 @@
 #include <cstdlib>      // rand(), srand() prototypes
 #include <ctime>        // time() prototype
 #include "vect.h"
+
 int main()
 {
     using namespace std;
@@ -25,7 +26,7 @@ int main()
         while (result.magval() < target)
         {
             direction = rand() % 360;
-            step.reset(dstep, direction, POL);
+            step.reset(dstep, direction, Vector::POL);
             result = result + step;
             steps++;
         }
