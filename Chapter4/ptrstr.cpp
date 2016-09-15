@@ -27,6 +27,7 @@ int main()
     strcpy(ps, animal);         // copy string to new storage
     cout << "After using strcpy():\n";
     cout << animal << " at " << (int *) animal << endl;
+    cout << animal << " *at " << (int) *animal << endl;     // (int *): cast to int type pointer, (int)*sdf: cast to int type
     cout << ps << " at " << (int *) ps << endl;
     delete [] ps;
     // cin.get();

@@ -11,7 +11,7 @@ int main()
     cout << "Monsieur cuts a striking figure!"  << endl;
     cout << "chest = " << chest << " (decimal for 42)" << endl;
     cout << hex;      // manipulator for changing number base
-    cout << "waist = " << waist << " (hexadecimal for 42)" << endl;
+    cout << "waist = " << waist << " (hexadecimal for 42)" << endl; // change number base
     cout << oct;      // manipulator for changing number base
     cout << "inseam = " << inseam << " (octal for 42)" << endl;
     // cin.get();

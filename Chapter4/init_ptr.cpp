@@ -4,7 +4,7 @@ int main()
 {
     using namespace std;
     int higgens = 5;
-    int * pt = &higgens;
+    int * pt = &higgens;        // recommand decalare and init
 
     cout << "Value of higgens = " << higgens
          << "; Address of higgens = " << &higgens << endl;

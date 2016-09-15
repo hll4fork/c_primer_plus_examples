@@ -19,7 +19,14 @@ int main()
     cout << "The code for " << ch << " is ";    // print as char
     cout << int(ch) << endl;                    // print as int
     cout << "Yes, the code is ";
+    /*
+    It’s valid only if type_name can be converted implicitly to the same type that
+    expression has, or vice versa. Otherwise, the type cast is an error
+    */
     cout << static_cast<int>(ch) << endl;       // using static_cast
+
+    // float ftest = 300.0f;
+    // cout << static_cast<char>(ftest) << endl;
    // cin.get();
     return 0; 
 }

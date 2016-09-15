@@ -7,6 +7,10 @@ int main()
     char name[ArSize];
     char dessert[ArSize];
 
+    /*
+    However, getline() then discards
+    the newline character, whereas get() leaves it in the input queue. 
+    */
     cout << "Enter your name:\n";
     cin.get(name, ArSize).get();    // read string, newline
     cout << "Enter your favorite dessert:\n";

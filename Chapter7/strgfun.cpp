@@ -8,6 +8,9 @@ int main()
 // some systems require preceding char with static to
 // enable array initialization
 
+    /*
+    ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+    */
     char *wail = "ululate";    // wail points to string
 
     unsigned int ms = c_in_str(mmm, 'm');

@@ -6,6 +6,7 @@ int main()
     using namespace std;
     string word = "?ate";
 
+    // using string class is more simple, != overloading operator for string class
     for (char ch = 'a'; word != "mate"; ch++)
     {
         cout << word << endl;

@@ -7,7 +7,7 @@ int main()
     float b = a + 1.0f;
 
     cout << "a = " << a << endl;
-    cout << "b - a = " << b - a << endl;
+    cout << "b - a = " << b - a << endl; // precision problem
     // cin.get();
     return 0; 
 }

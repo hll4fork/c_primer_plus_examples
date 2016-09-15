@@ -7,6 +7,9 @@ int main()
     cout << "Enter the delay time, in seconds: ";
     float secs;
     cin >> secs;
+    /*
+    CLOCKS_PER_SEC, that equals the number of system time units per second
+    */
     clock_t delay = secs * CLOCKS_PER_SEC;  // convert to clock ticks
     cout << "starting\a\n";
     clock_t start = clock();

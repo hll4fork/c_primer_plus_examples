@@ -16,9 +16,9 @@ int main()
     antarctica_years_end trio[3]; // array of 3 structures
     trio[0].year = 2003;
     std::cout << trio->year << std::endl;
-    const antarctica_years_end * arp[3] = {&s01, &s02, &s03};
+    const antarctica_years_end * arp[3] = {&s01, &s02, &s03};   // arrary point to antarctica_years_end type
     std::cout << arp[1]->year << std::endl;
-    const antarctica_years_end ** ppa = arp; 
+    const antarctica_years_end ** ppa = arp;                    // interpret as *(*ppa), so ppa point to arp
     auto ppb = arp; // C++0x automatic type deduction
 // or else use const antarctica_years_end ** ppb = arp; 
     std::cout << (*ppa)->year << std::endl;

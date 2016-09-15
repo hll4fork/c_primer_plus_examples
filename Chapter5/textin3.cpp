@@ -6,6 +6,12 @@ int main()
     char ch;
     int count = 0;
     cin.get(ch);        // attempt to read a char
+
+    /*
+    When cin detects the EOF, it sets two bits (the eofbit and the failbit) to 1.
+    the fail() member function returns true if either the eofbit or the failbit has been set to
+    1 and false otherwise
+    */
     while (cin.fail() == false)  // test for EOF
     {
         cout << ch;     // echo character

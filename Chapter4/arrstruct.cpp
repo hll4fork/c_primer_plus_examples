@@ -9,6 +9,7 @@ struct inflatable
 int main()
 {
     using namespace std;
+    // in old C/C++, you need write struct inflatable
     inflatable guests[2] =          // initializing an array of structs
     {
         {"Bambi", 0.5, 21.99},      // first structure in array

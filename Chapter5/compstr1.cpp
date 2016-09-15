@@ -6,6 +6,7 @@ int main()
     using namespace std;
     char word[5] = "?ate";
 
+    // ==: return 0, ><: return no-zero
     for (char ch = 'a'; strcmp(word, "mate"); ch++)
     {
         cout << word << endl;

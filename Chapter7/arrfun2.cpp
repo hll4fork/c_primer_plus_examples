@@ -29,7 +29,7 @@ int sum_arr(int arr[], int n)
     int total = 0;
     std::cout << arr << " = arr, ";
 // some systems require a type cast: unsigned (arr)
-
+// ‘sizeof’ on array function parameter ‘arr’ will return size of ‘int*’ [-Wsizeof-array-argument] 
     std::cout << sizeof arr << " = sizeof arr\n";
     for (int i = 0; i < n; i++)
         total = total + arr[i];

@@ -11,21 +11,21 @@ int main()
     double av[3] = {1112.3, 1542.6, 2227.9};
 
     // pointer to a function
-    const double *(*p1)(const double *, int) = f1;
+    const double *(*p1)(const double *, int) = f1;      // functions's name is function's pointer
     auto p2 = f2;  // C++0x automatic type deduction
     // pre-C++0x can use the following code instead
     // const double *(*p2)(const double *, int) = f2;
      cout << "Using pointers to functions:\n";
     cout << " Address  Value\n";
-    cout <<  (*p1)(av,3) << ": " << *(*p1)(av,3) << endl;
+    cout <<  (*p1)(av,3) << ": " << *(*p1)(av,3) << endl;   // (*p1)(av,3): return value's address, *(*p1)(av,3): get the value for that address
     cout << p2(av,3) << ": " << *p2(av,3) << endl;
 
     // pa an array of pointers
     // auto doesn't work with list initialization
-    const double *(*pa[3])(const double *, int) = {f1,f2,f3};
+    const double *(*pa[3])(const double *, int) = {f1,f2,f3}; // *pa[3] is pointer array for const double *()(const double *, int) type
     // but it does work for initializing to a single value
     // pb a pointer to first element of pa
-    auto pb = pa;
+    auto pb = pa;       // point pointer array pointer
     // pre-C++0x can use the following code instead
     // const double *(**pb)(const double *, int) = pa;
     cout << "\nUsing an array of pointers to functions:\n";
